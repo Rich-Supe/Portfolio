@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.599bec87.chunk.css",
-    "main.js": "/static/js/main.4fa768d1.chunk.js",
-    "main.js.map": "/static/js/main.4fa768d1.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.0a86a161.js",
-    "runtime-main.js.map": "/static/js/runtime-main.0a86a161.js.map",
+    "main.css": "/static/css/main.bdf7cc7d.chunk.css",
+    "main.js": "/static/js/main.c86cfc8e.chunk.js",
+    "main.js.map": "/static/js/main.c86cfc8e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.1bbf2dfb.js",
+    "runtime-main.js.map": "/static/js/runtime-main.1bbf2dfb.js.map",
     "static/css/2.b67bb947.chunk.css": "/static/css/2.b67bb947.chunk.css",
-    "static/js/2.0684766d.chunk.js": "/static/js/2.0684766d.chunk.js",
-    "static/js/2.0684766d.chunk.js.map": "/static/js/2.0684766d.chunk.js.map",
-    "static/js/3.d094beff.chunk.js": "/static/js/3.d094beff.chunk.js",
-    "static/js/3.d094beff.chunk.js.map": "/static/js/3.d094beff.chunk.js.map",
+    "static/js/2.5b89cdc9.chunk.js": "/static/js/2.5b89cdc9.chunk.js",
+    "static/js/2.5b89cdc9.chunk.js.map": "/static/js/2.5b89cdc9.chunk.js.map",
+    "static/js/3.69c7dbf5.chunk.js": "/static/js/3.69c7dbf5.chunk.js",
+    "static/js/3.69c7dbf5.chunk.js.map": "/static/js/3.69c7dbf5.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.b67bb947.chunk.css.map": "/static/css/2.b67bb947.chunk.css.map",
-    "static/css/main.599bec87.chunk.css.map": "/static/css/main.599bec87.chunk.css.map",
-    "static/js/2.0684766d.chunk.js.LICENSE.txt": "/static/js/2.0684766d.chunk.js.LICENSE.txt",
+    "static/css/main.bdf7cc7d.chunk.css.map": "/static/css/main.bdf7cc7d.chunk.css.map",
+    "static/js/2.5b89cdc9.chunk.js.LICENSE.txt": "/static/js/2.5b89cdc9.chunk.js.LICENSE.txt",
     "static/media/Cellars.16362fd9.mp4": "/static/media/Cellars.16362fd9.mp4",
     "static/media/FureverWalks.50dc09b9.mp4": "/static/media/FureverWalks.50dc09b9.mp4",
     "static/media/Gamebnb.d8ec117f.mp4": "/static/media/Gamebnb.d8ec117f.mp4",
@@ -23,10 +23,10 @@
     "static/media/index.css": "/static/media/space2.5f489150.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.0a86a161.js",
+    "static/js/runtime-main.1bbf2dfb.js",
     "static/css/2.b67bb947.chunk.css",
-    "static/js/2.0684766d.chunk.js",
-    "static/css/main.599bec87.chunk.css",
-    "static/js/main.4fa768d1.chunk.js"
+    "static/js/2.5b89cdc9.chunk.js",
+    "static/css/main.bdf7cc7d.chunk.css",
+    "static/js/main.c86cfc8e.chunk.js"
   ]
 }
