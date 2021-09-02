@@ -22,10 +22,15 @@ export default function AboutMe() {
                     <img src={profilePic} alt="profile" className={styles.image}/>
                 </div>
             </div>
-            <a href='#p5' className={styles.arrow}>
+            <a href='#p5' className={styles.arrow1}>
             <div className={styles.buttonDiv}>
-                <p className={styles.downText}>Contact Me</p>
-                <FaAngleDoubleDown className={styles.down}/>
+                {/* <p className={styles.downText}>Contact Me</p>
+                <FaAngleDoubleDown className={styles.down}/> */}
+                <div className='arrow'>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                    </div>
             </div>
             </a>
         </div>

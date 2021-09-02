@@ -34,6 +34,15 @@ function App() {
 
   return (
     <div className="body">
+        <div className="nav">
+            <ul className='navList'>
+                <li className='navLi'><a href="#p1" className='navA'>Home</a></li>
+                <li className='navLi'><a href="#p2" className='navA'>Projects</a></li>
+                <li className='navLi'><a href="#p3" className='navA'>Technologies</a></li>
+                <li className='navLi'><a href="#p4" className='navA'>About Me</a></li>
+                <li className='navLi'><a href="#p5" className='navA'>Contact</a></li>
+            </ul>
+        </div>
         <div id='socials'>
             <ul id="socialsList">
                 <li>
@@ -55,8 +64,13 @@ function App() {
         </div>
         <a href="#p2" className='downpg1'>
             <div className='buttonDiv' className='arrow1'>
-                    <p className='downText'>Projects</p>
-                    <FaAngleDoubleDown className='down'/>
+                    {/* <p className='downText'>Projects</p> */}
+                    {/* <FaAngleDoubleDown className='down'/> */}
+                    <div className='arrow'>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </a>
         <Canvas className='canvas' id='p1'>

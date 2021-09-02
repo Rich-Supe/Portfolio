@@ -7,11 +7,12 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    padding-top: 5%;
 }
 
 .upArrow {
     position: absolute;
-    top: 20px;
+    top: 10%;
     left: 50%;
     transform: translateX(-50%);
     cursor: pointer;
@@ -22,6 +23,14 @@
     color: white;
     font-size: 3rem;
     text-decoration: none;
+}
+
+.icon:hover{
+    color: rgb(253, 9, 253);
+}
+
+.upText:hover {
+    color: rgb(253, 9, 253);
 }
 
 .upArrow:after {
@@ -99,7 +108,7 @@
     background-color: rgba(255, 255, 255, 0);
 }
 
-.rocketBtn {
+.mailBtn {
     width: 100%;
     height: 100%;
     /* border-radius: 50%; */
@@ -108,5 +117,9 @@
     font-size: 1.3rem;
     cursor: pointer;
     /* box-shadow: 0px 0px 3px 3px rgb(253, 9, 253) */
+}
+
+.mailBtn:hover {
+    color: rgb(12, 175, 250);
 }
 

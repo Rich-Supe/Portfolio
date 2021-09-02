@@ -54,10 +54,15 @@ function Projects() {
                     <Cellars />
                 </SwiperSlide>
                 </Swiper>
-                    <a href='#p3' className={styles.down2}>
+                    <a href='#p3' className={styles.downpg1}>
                 <div className={styles.buttonDiv}>
-                        <p className={styles.downText}>My Stack</p>
-                        <FaAngleDoubleDown className={styles.down}/>
+                        {/* <p className={styles.downText}>My Stack</p> */}
+                        {/* <FaAngleDoubleDown className={styles.down}/> */}
+                        <div className='arrow'>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                    </div>
                 </div>
                     </a>
         </div>
