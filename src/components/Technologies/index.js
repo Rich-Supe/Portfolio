@@ -8,7 +8,7 @@ export default function Technologies() {
 
     return (
         <div class='technologies' id='p3'>
-            <h1 className='header'>Tools of Choice:</h1>
+            <h1 className='header'>What I use to create</h1>
             <div className='card'>
                 <div className='column'>
                     <ul className='ul1'>

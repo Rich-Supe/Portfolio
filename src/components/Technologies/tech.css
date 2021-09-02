@@ -18,6 +18,7 @@
 
 .header {
     margin-bottom: 50px;
+    text-shadow: 2px 3px 4px black;
 }
 
 .card {
