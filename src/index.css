@@ -59,7 +59,7 @@ code {
     position: absolute;
     z-index: 1;
     top: 15%;
-    left: 33%;
+    left: 32%;
     width: 100%;
 }
 
@@ -75,16 +75,39 @@ code {
 
 .anchorT {
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    color: white;
+    position: absolute;
+    font-weight: bold;
+    text-shadow: 3px 6px 10px black;
+    z-index: 3;
 }
 
-.anchorT:hover {
-    border-bottom: 1px solid white;
+.socialIcons {
+    width: 2.3rem;
+    height: 2.3rem;
 }
+
+.socialIcons:hover {
+    cursor: hand;
+    border-bottom: 1px solid white;
+    border-radius: 5%;
+}
+
+/* .star {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    z-index: 1 !important;
+} */
 
 .anchorT:visited {
     color: white;
     text-decoration: none;
+}
+
+.anchorT::after {
+    color: white;
 }
 
 #container {
@@ -138,6 +161,7 @@ code {
     font-size: 1.8rem;
     width: 50vh;
     padding: 40px;
+    text-align: right;
 }
 
 .downpg1 {

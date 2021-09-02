@@ -3,6 +3,7 @@ import { Canvas } from 'react-three-fiber';
 import { useRef, useEffect, Suspense } from 'react';
 import { OrbitControls } from "@react-three/drei";
 import { FaAngleDoubleDown } from 'react-icons/fa'
+import { AiFillLinkedin, AiFillGithub, AiFillFileText } from 'react-icons/ai'
 import { gsap } from "gsap";
 import { CSSRulePlugin } from "gsap/all";
 // import { timeline } from 'gsap';
@@ -46,13 +47,22 @@ function App() {
         <div id='socials'>
             <ul id="socialsList">
                 <li>
-                    <a href='https://www.linkedin.com/in/richard-supe' className='anchorT'>LinkedIn</a>
+                    <a href='https://www.linkedin.com/in/richard-supe' className='anchorT'>
+                        {/* LinkedIn */}
+                        <AiFillLinkedin className='socialIcons'/>
+                    </a>
                 </li>
                 <li>
-                    <a href='https://github.com/Rich-Supe' className='anchorT'>Github</a>
+                    <a href='https://github.com/Rich-Supe' className='anchorT'>
+                        {/* Github */}
+                        <AiFillGithub className='socialIcons'/>
+                        </a>
                 </li>
                 <li>
-                    <a className='anchorT'>Resume</a>
+                    <a href='https://docs.google.com/document/d/1LC3_jW-G1jtCPWpUj680A5HujF5qzUPGnJweSasCvYI/edit?usp=sharing' className='anchorT'>
+                        {/* Resume */}
+                        <AiFillFileText className='socialIcons'/>
+                        </a>
                 </li>
             </ul>
         </div>
