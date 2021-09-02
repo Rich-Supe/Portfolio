@@ -1,0 +1,239 @@
+
+.projects {
+    /* min-height: 800px; */
+    height: 100vh;
+    width: 100vw;
+    /* border: 2px solid rgb(255, 245, 245); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.swiper {
+    width: 90%;
+    /* border: 10px solid orange; */
+    min-height: 600px;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.slide {
+    /* border: 3px solid red; */
+    width: 95%;
+    /* border: 1px solid white; */
+    /* height: 98% !important; */
+    min-height: 600px;
+}
+
+.slideContent {
+    /* border: 2px solid yellow; */
+    width: 100%;
+    height: 80%;
+    min-height: 600px;
+    display: flex;
+}
+
+.slideHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 10%;
+}
+
+.swipetext {
+    position: absolute;
+    /* top: 50%; */
+    right: 20px;
+    /* border-bottom: 1px solid rgb(12, 175, 250); */
+}
+
+.buttonDiv{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+}
+
+.down {
+    color: white;
+    font-size: 1.7rem;
+}
+
+.downText {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.down:hover {
+    cursor: pointer;
+}
+
+.cellars, .fureverWalks, .gameBnb, .portfolio {
+    width: 100%;
+    height: 100% !important; 
+}
+
+/* GameBnb */
+.projectLink {
+    margin: 0;
+    font-size: 2em;
+    padding:10px;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+}
+
+.projectLink:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.projectLink:hover {
+    border-bottom: 1px solid white;
+}
+
+.github {
+    margin: 10px;
+    /* padding: 10px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+}
+
+.github:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.github:hover {
+    border-bottom: 1px solid white;
+}
+
+.githubTag {
+    font-size: 4rem;
+}
+
+.githubIcon {
+    font-size: 2rem;
+}
+
+.slideLeft {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1%;
+}
+
+.slideRight {
+    width: 50%;
+    height: 100%;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1%;
+    /* border: 2px solid olivedrab; */
+}
+
+.rightCard {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid white; */
+}
+
+.descriptionCard {
+    width: 80%;
+    height: 80%;
+    padding-top: 5%;
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.description {
+    font-size: 1.2em;
+    padding: 15px;
+}
+
+.technologiesDiv {
+    width: 70%;
+    /* border: 2px solid white; */
+    box-shadow: 0px 0px 10px 3px yellow;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.listDiv {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.backend, .frontend {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.video {
+    /* box-shadow: 0px 0px 10px 3px rgb(12, 175, 250); */
+}
+
+.down2 {
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none;
+}
+
+.down2:after {
+    color: white;
+    text-decoration: none;
+}
+
+/* .swiperContainer {
+    width: 100%;
+    height: 120%;
+}
+
+.cubeSlide {
+    height: 30%;
+    width: 60%;
+    max-width: 200px;
+    max-height: 300px;
+}
+
+.cubeSlideContent {
+    background-color: white;
+    height: 200px;
+    width: 200px;
+    color: black;
+
+} */

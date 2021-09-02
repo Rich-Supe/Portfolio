@@ -1,0 +1,84 @@
+
+import { Canvas } from 'react-three-fiber';
+import { useRef, useEffect, Suspense } from 'react';
+import { OrbitControls } from "@react-three/drei";
+import { FaAngleDoubleDown } from 'react-icons/fa'
+import { gsap } from "gsap";
+import { CSSRulePlugin } from "gsap/all";
+// import { timeline } from 'gsap';
+
+// import Nav from './components/Nav';
+// import Footer from './components/Footer';
+import Environment from './components/Environment';
+import Geometry from './components/Geometry'
+import Projects from './components/Projects'
+import Technologies from './components/Technologies';
+import AboutMe from './components/AboutMe';
+import ContactMe from './components/ContactMe';
+import './App.css';
+import { GridHelper } from 'three';
+
+function App() {
+    const content = CSSRulePlugin.getRule("#content:before");
+    // const h1 = document.querySelector("h1");
+    // const p = document.querySelector("p");
+    const h1Ref = useRef(null);
+    const pRef = useRef(null);
+    const tl = gsap.timeline();
+
+    useEffect(() => {
+        tl.from(content, { delay: .5, duration: 4, cssRule: {scaleX: 0}})
+        tl.to(h1Ref.current, { duration: 2, clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)", y: '30px' }, '-=3')
+        tl.to(pRef.current, { duration: 4, clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)", y: '30px' }, '-=2')
+    }, [])
+
+  return (
+    <div className="body">
+        <div id='socials'>
+            <ul id="socialsList">
+                <li>
+                    <a href='https://www.linkedin.com/in/richard-supe' className='anchorT'>LinkedIn</a>
+                </li>
+                <li>
+                    <a href='https://github.com/Rich-Supe' className='anchorT'>Github</a>
+                </li>
+                <li>
+                    <a className='anchorT'>Resume</a>
+                </li>
+            </ul>
+        </div>
+        <div id="container">
+            <div id="content">
+                <h1 ref={h1Ref} className='name'>Rich Supe</h1>
+                <p ref={pRef} className='role'>Full-Stack Software Engineer</p>
+            </div>
+        </div>
+        <a href="#p2" className='downpg1'>
+            <div className='buttonDiv' className='arrow1'>
+                    <p className='downText'>Projects</p>
+                    <FaAngleDoubleDown className='down'/>
+                </div>
+            </a>
+        <Canvas className='canvas' id='p1'>
+            <Suspense fallback={null}>
+                <pointLight color='white' position={[10, -10, 0]} intensity={3}/>
+                {/* <spotLight color='white' position={[10, 100, 10]} intensity={2} angle={0.5} penumbra={1} castShadow /> */}
+                {/* <spotLightShadow /> */}
+                {/* <spotLightHelper /> */}
+                <Environment/>
+                <Geometry />
+                {/* <gridHelper /> */}
+            </Suspense>
+            {/* <OrbitControls /> */}
+        </Canvas>
+        <Projects />
+        <Technologies />
+        <AboutMe />
+        {/* <Nav/> */}
+        {/* <Footer/> */}
+        <ContactMe/>
+    </div>
+  );
+}
+
+export default App;
