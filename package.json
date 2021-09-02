@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "rich-supe.github.io",
+  "homepage": "https://rich-supe.github.io/Portfolio/",
   "private": true,
   "dependencies": {
     "@react-three/drei": "^7.5.0",
