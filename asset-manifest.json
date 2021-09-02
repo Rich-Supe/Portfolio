@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.5ebc763b.chunk.css",
+    "main.js": "/Portfolio/static/js/main.f0326334.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.f0326334.chunk.js.map",
+    "runtime-main.js": "/Portfolio/static/js/runtime-main.1f6d6f7c.js",
+    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.1f6d6f7c.js.map",
+    "static/css/2.b67bb947.chunk.css": "/Portfolio/static/css/2.b67bb947.chunk.css",
+    "static/js/2.df4fdbfc.chunk.js": "/Portfolio/static/js/2.df4fdbfc.chunk.js",
+    "static/js/2.df4fdbfc.chunk.js.map": "/Portfolio/static/js/2.df4fdbfc.chunk.js.map",
+    "static/js/3.d094beff.chunk.js": "/Portfolio/static/js/3.d094beff.chunk.js",
+    "static/js/3.d094beff.chunk.js.map": "/Portfolio/static/js/3.d094beff.chunk.js.map",
+    "index.html": "/Portfolio/index.html",
+    "static/css/2.b67bb947.chunk.css.map": "/Portfolio/static/css/2.b67bb947.chunk.css.map",
+    "static/css/main.5ebc763b.chunk.css.map": "/Portfolio/static/css/main.5ebc763b.chunk.css.map",
+    "static/js/2.df4fdbfc.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.df4fdbfc.chunk.js.LICENSE.txt",
+    "static/media/Cellars.16362fd9.mp4": "/Portfolio/static/media/Cellars.16362fd9.mp4",
+    "static/media/FureverWalks.50dc09b9.mp4": "/Portfolio/static/media/FureverWalks.50dc09b9.mp4",
+    "static/media/Gamebnb.d8ec117f.mp4": "/Portfolio/static/media/Gamebnb.d8ec117f.mp4",
+    "static/media/Portfolio.19d4a665.mp4": "/Portfolio/static/media/Portfolio.19d4a665.mp4",
+    "static/media/normalMap.6fc081e8.png": "/Portfolio/static/media/normalMap.6fc081e8.png",
+    "static/media/profile2.9538e55a.jpg": "/Portfolio/static/media/profile2.9538e55a.jpg",
+    "static/media/index.css": "/Portfolio/static/media/space2.5f489150.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1f6d6f7c.js",
+    "static/css/2.b67bb947.chunk.css",
+    "static/js/2.df4fdbfc.chunk.js",
+    "static/css/main.5ebc763b.chunk.css",
+    "static/js/main.f0326334.chunk.js"
+  ]
+}
