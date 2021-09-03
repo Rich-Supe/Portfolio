@@ -63,8 +63,8 @@ code {
 #socials {
     position: absolute;
     z-index: 1;
-    top: 15%;
-    left: 32%;
+    top: 75%;
+    left: 63%;
     width: 100%;
 }
 
@@ -75,8 +75,20 @@ code {
     align-items: center;
     width: 30%;
     list-style: none;
+    position: relative;
     /* font-size: rem; */
 }
+
+#socialsList:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* border-bottom: 1px solid white; */
+    transform: scaleX(1);
+}
+
 
 .anchorT {
     text-decoration: none;
@@ -89,8 +101,8 @@ code {
 }
 
 .socialIcons {
-    width: 2.3rem;
-    height: 2.3rem;
+    width: 1.8rem;
+    height: 1.8rem;
 }
 
 .socialIcons:hover {
@@ -148,6 +160,12 @@ code {
     transform: scaleX(1);
 }
 
+#s1, #s2, #s3 {
+    flex-basis: 0;
+    flex-grow: 1;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0)
+}
+
 .name, .role {
     flex-basis: 0;
     flex-grow: 1;
@@ -165,10 +183,12 @@ code {
 }
 
 .role {
+    /* position: absolute; */
     font-size: 1.8rem;
     width: 55vh;
-    padding: 40px 0px;
+    padding: 20px 0px;
     text-align: right;
+    overflow: visible;
 }
 
 .downpg1 {

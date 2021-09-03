@@ -50,7 +50,7 @@ export default function FureverWalks() {
                     </div>
                     <div className={styles.slideRight}>
                         <div className={styles.rightCard}>
-                        <video width="640" muted='true' height="480" controls>
+                        <video width="640" muted='true' height="480" controls className={styles.video}>
                             <source src={dog} type="video/mp4"/>
                             {/* <source src="movie.ogg" type="video/ogg"> */}
                             Your browser does not support the video tag.

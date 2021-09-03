@@ -21,7 +21,7 @@ export default function Portfolio() {
             <div className={styles.slideContent}>
                 <div className={styles.slideRight}>
                     <div className={styles.rightCard}>
-                    <video width="640" height="480" muted='true' controls>
+                    <video width="640" height="480" muted='true' controls className={styles.video}>
                     <source src={port} type="video/mp4"/>
                     {/* <source src="movie.ogg" type="video/ogg"> */}
                     Your browser does not support the video tag.
