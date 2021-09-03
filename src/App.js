@@ -47,7 +47,7 @@ function App() {
                 <li className='navLi'><a href="#p2" className='navA'>Projects</a></li>
                 <li className='navLi'><a href="#p3" className='navA'>Technologies</a></li>
                 <li className='navLi'><a href="#p4" className='navA'>About Me</a></li>
-                <li className='navLi'><a href="#p5" className='navA'>Contact</a></li>
+                <li className='navLi'><a href="#p5" className='navA'>Contact Me</a></li>
             </ul>
         </div>
         <div id="container">
@@ -70,8 +70,8 @@ function App() {
                         </li>
                         <li>
                             <a id='s3' ref={s3Ref} href='https://docs.google.com/document/d/1LC3_jW-G1jtCPWpUj680A5HujF5qzUPGnJweSasCvYI/edit?usp=sharing' className='anchorT'>
-                                {/* Resume */}
-                                <AiFillFileText className='socialIcons'/>
+                                <p className='resume'>Resume</p>
+                                {/* <AiFillFileText className='socialIcons'/> */}
                                 </a>
                         </li>
                     </ul>

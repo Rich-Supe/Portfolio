@@ -4,6 +4,7 @@ import React, { useMemo, useRef } from "react";
 import * as THREE from 'three'
 import { useLoader, useFrame } from 'react-three-fiber'
 import circleImg from '../../assets/circle.png'
+import starImg from '../../assets/stars.png'
 // import { BackSide } from "three";
 
 function Environment() {
@@ -11,8 +12,8 @@ function Environment() {
     const points = useRef();
 
     useFrame(() => {
-        points.current.rotation.y -= 0.003;
-        points.current.rotation.x -= 0.003;
+        points.current.rotation.y -= 0.002;
+        points.current.rotation.x -= 0.001;
     });
 
     const count = 3000;
@@ -44,7 +45,9 @@ function Environment() {
             attach="material"
             map={imgTex}
             // color={0x00AAFF}
+            // color='red'
             size={0.04}
+            // size={.2}
             sizeAttenuation
             transparent={false}
             alphaTest={0.5}

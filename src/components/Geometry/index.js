@@ -13,19 +13,20 @@ function Geometry() {
     const colorMap = useLoader(TextureLoader, texture)
 
     useFrame(() => {
-        group.current.rotation.y += 0.008;
+        group.current.rotation.y += 0.0038;
         group.current.rotation.x += 0.008;
     });
 
     const FakeSphere = () => {
         return (
             <mesh> 
-                <sphereBufferGeometry args={[0.95, 30, 30]} attach="geometry" />
+                <sphereBufferGeometry args={[1, 30, 30]} attach="geometry" />
                 {/* <meshPhongMaterial */}
                 <meshStandardMaterial
                 color={0xB93622}
                 attach="material"
                 map={colorMap} 
+                metalness={0.3}
                 />
             </mesh>
         );

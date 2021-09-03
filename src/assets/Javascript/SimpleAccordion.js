@@ -57,8 +57,12 @@ export default function SimpleAccordion() {
         >
           <Typography className={classes.heading}>Future</Typography>
         </AccordionSummary>
-        <Typography>
-            I'm hoping to meet some amazing people and learn new skills! If you'd like to connect, please don't hesitate to reach out below!
+        <Typography padding='10'>
+            I'm hoping to meet some amazing people and learn new skills! 
+            If you'd like to connect, please don't hesitate to reach out below!
+            <br/>
+            <br/>
+            {/* {'                              .'} */}
         </Typography>
       </Accordion>
     </div>
