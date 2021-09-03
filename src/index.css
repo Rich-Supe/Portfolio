@@ -46,6 +46,7 @@ code {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    font-family: 'Play', sans-serif;
 }
 
 .navA {
@@ -53,6 +54,10 @@ code {
     color: white;
     font-size: 1.2rem;
     font-weight: bold;
+}
+
+.navA:hover {
+    color: yellow;
 }
 
 #socials {
@@ -120,6 +125,8 @@ code {
     top: 36%;
     display: grid;
     place-content: center;
+    font-family: 'Play', sans-serif;
+    text-shadow: 5px 5px 10px black;
 }
 
 #content {
@@ -159,8 +166,8 @@ code {
 
 .role {
     font-size: 1.8rem;
-    width: 50vh;
-    padding: 40px;
+    width: 55vh;
+    padding: 40px 0px;
     text-align: right;
 }
 

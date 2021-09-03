@@ -45,6 +45,7 @@
     align-items: center;
     position: relative;
     height: 10%;
+    font-family: 'Play', sans-serif;
 }
 
 .swipetext {
@@ -169,7 +170,9 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Play', sans-serif;
+    /* font-weight: 400; */
 }
 
 .description {

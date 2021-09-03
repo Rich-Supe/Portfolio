@@ -19,7 +19,7 @@ export default function ContactMe() {
             </a>
             <h1 className={styles.header}>Looking to work with me?</h1>
             <div className={styles.card}>
-                <form className={styles.form} form action="https://formsubmit.co/richysupe@gmail.com" method="POST">
+                <form className={styles.form} form action="https://formsubmit.co/bfc735cd21b9a4b2c637904767e72cba" method="POST">
                     <div>
                     {/* <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"/> */}
                     <input type="hidden" name="_subject" value="Rich Supe Contact Form"></input>

@@ -8,8 +8,9 @@
     justify-content: center;
     align-items: center;
     /* border: 2px solid white; */
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     position: relative;
+    font-family: 'Play', sans-serif;
 }
 
 .aboutMe__container {
