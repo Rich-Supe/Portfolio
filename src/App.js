@@ -33,7 +33,7 @@ function App() {
     useEffect(() => {
         tl.from(content, { delay: .5, duration: 4, cssRule: {scaleX: 0}})
         tl.to(h1Ref.current, { duration: 2, clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)", y: '30px' }, '-=3')
-        tl.to(pRef.current, { duration: 4, clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)", y: '30px' }, '-=2')
+        tl.to(pRef.current, { duration: 3, clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)", y: '30px' }, '-=2')
         tl.to(s1Ref.current, { duration: 1, clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)", y: '10px' }, '-=1.6')
         tl.to(s2Ref.current, { duration: 1, clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)", y: '10px' }, '-=1.4')
         tl.to(s3Ref.current, { duration: 1, clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)", y: '10px' }, '-=1.2')

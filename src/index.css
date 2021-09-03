@@ -64,7 +64,7 @@ code {
     position: absolute;
     z-index: 1;
     top: 75%;
-    left: 63%;
+    left: 72%;
     width: 100%;
 }
 
@@ -73,7 +73,7 @@ code {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 30%;
+    width: 20%;
     list-style: none;
     position: relative;
     /* font-size: rem; */
@@ -143,10 +143,11 @@ code {
 
 #content {
     display: flex;
-    gap: 25em;
+    gap: 12em;
     width: 100%;
     /* padding-top: 3em; */
-    position: relative;
+    position: absolute;
+    right: 8%;
     /* border: 2px solid red; */
 }
 
@@ -186,7 +187,7 @@ code {
     /* position: absolute; */
     font-size: 1.8rem;
     width: 55vh;
-    padding: 20px 0px;
+    padding: 20px 22px 20px 0px;
     text-align: right;
     overflow: visible;
 }
