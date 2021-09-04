@@ -64,7 +64,7 @@ code {
 #socials {
     position: absolute;
     z-index: 1;
-    top: 75%;
+    top: 73%;
     left: 72%;
     width: 100%;
 }
@@ -207,7 +207,7 @@ code {
     /* position: absolute; */
     font-size: 1.8rem;
     width: 55vh;
-    padding: 20px 22px 20px 0px;
+    padding: 15px 22px 20px 0px;
     text-align: right;
     overflow: visible;
 }

@@ -31,7 +31,7 @@ export default function Portfolio() {
             <div className={styles.slideLeft}>
                         <div className={styles.descriptionCard}>
                             {/* <h1>Description</h1> */}
-                            <p className={styles.description}> My Portfolio website uses Three Js to create the landing page! For the planet, I created a texture to wrap around the mesh. I also used separate geometry figures for the rings. To create the star scene, I created rotating images of over 3k stars as material within a positionsArray geometry!</p>
+                            <p className={styles.description}> My Portfolio website uses Three Js to create the landing page! I start with a scene and place the camera. Then I add lighting using a spotlight, shadows, and hoverLights. I create the environment using a rotating 3000 star geometry. The rings on the planet are separate geometries with the planet having it's own textures and mesh.</p>
                             <div className={styles.technologiesDiv}>
                                 <h2> Technologies used</h2>
                                 <div className={styles.listDiv}>
@@ -39,9 +39,11 @@ export default function Portfolio() {
                                         <li>JavaScript</li>
                                         <li>HTML5/CSS3</li>
                                         <li>React</li>
+                                        <li>Gsap</li>
                                     </ul>
                                     <ul className={styles.frontend}>
                                         <li>ThreeJs</li>
+                                        <li>Three-Fiber</li>
                                         <li>MaterialUi</li>
                                         <li>SwiperJs</li>
                                     </ul>

@@ -26,7 +26,7 @@ export default function GameBnb() {
                 <div className={styles.slideLeft}>
                     <div className={styles.descriptionCard}>
                         {/* <h1>Description</h1> */}
-                        <p className={styles.description}> GameBnb is a fantasy based Airbnb clone where users can create worlds and make reservations at other listings! Allows multiple image uploading to AWS S3 buckets to split storage load, Docker containerization for deployment, and Redux/Flux architecture for unidirectional data flow and state management.</p>
+                        <p className={styles.description}> GameBnb is a fantasy based Airbnb clone where users can create worlds for others to stay and even make reservations/write reviews at other places! Allows multiple image uploading to AWS, Docker containerization/Heroku for deployment, and Redux/Flux architecture for unidirectional data flow and state management on the front-end.</p>
                         <div className={styles.technologiesDiv}>
                             <h2> Technologies used</h2>
                             <div className={styles.listDiv}>
