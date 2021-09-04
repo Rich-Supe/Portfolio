@@ -10,8 +10,8 @@ export default function Cellars() {
     return (
         <div className={styles.cellars}>
             <div className={styles.slideHeader}>
-                <a href="https://cellars-app.herokuapp.com/" className={styles.projectLink}>Cellars</a>
-                <a href="https://github.com/Rich-Supe/Cellars" className={styles.github}>
+                <a target="_blank" href="https://cellars-app.herokuapp.com/" className={styles.projectLink}>Cellars</a>
+                <a target="_blank" href="https://github.com/Rich-Supe/Cellars" className={styles.github}>
                     < GoLogoGithub className={styles.githubTag} />
                     < DiGithubAlt className={styles.githubIcon} />
                 </a>

@@ -13,7 +13,7 @@ export default function Portfolio() {
         <div className={styles.portfolio}>
             <div className={styles.slideHeader}>
                 <p className={styles.projectLink}>Portfolio</p>
-                <a href="https://github.com/Rich-Supe/Portfolio" className={styles.github}>
+                <a target="_blank" href="https://github.com/Rich-Supe/Portfolio" className={styles.github}>
                     < GoLogoGithub className={styles.githubTag} />
                     < DiGithubAlt className={styles.githubIcon} />
                 </a>

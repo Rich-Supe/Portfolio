@@ -12,8 +12,8 @@ export default function FureverWalks() {
     return (
         <div className={styles.fureverWalks}>
             <div className={styles.slideHeader}>
-                <a href="https://furever-walks.herokuapp.com/" className={styles.projectLink}>Furever Walks</a>
-                <a href="https://github.com/Rich-Supe/Furever-Walks" className={styles.github}>
+                <a target="_blank" href="https://furever-walks.herokuapp.com/" className={styles.projectLink}>Furever Walks</a>
+                <a target="_blank" href="https://github.com/Rich-Supe/Furever-Walks" className={styles.github}>
                     < GoLogoGithub className={styles.githubTag} />
                     < DiGithubAlt className={styles.githubIcon} />
                 </a>

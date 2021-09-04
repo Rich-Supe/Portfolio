@@ -57,19 +57,19 @@ function App() {
                 <div id='socials'>
                     <ul id="socialsList">
                         <li>
-                            <a id='s1' ref={s1Ref} href='https://www.linkedin.com/in/richard-supe' className='anchorT'>
+                            <a id='s1' ref={s1Ref} target="_blank" href='https://www.linkedin.com/in/richard-supe' className='anchorT'>
                                 {/* LinkedIn */}
                                 <AiFillLinkedin className='socialIcons'/>
                             </a>
                         </li>
                         <li>
-                            <a id='s2' ref={s2Ref} href='https://github.com/Rich-Supe' className='anchorT'>
+                            <a id='s2' ref={s2Ref} target="_blank" href='https://github.com/Rich-Supe' className='anchorT'>
                                 {/* Github */}
                                 <AiFillGithub className='socialIcons'/>
                                 </a>
                         </li>
                         <li>
-                            <a id='s3' ref={s3Ref} href='https://docs.google.com/document/d/1LC3_jW-G1jtCPWpUj680A5HujF5qzUPGnJweSasCvYI/edit?usp=sharing' className='anchorT'>
+                            <a id='s3' ref={s3Ref} target="_blank" href='https://docs.google.com/document/d/1LC3_jW-G1jtCPWpUj680A5HujF5qzUPGnJweSasCvYI/edit?usp=sharing' className='anchorT'>
                                 <p className='resume'>Resume</p>
                                 {/* <AiFillFileText className='socialIcons'/> */}
                                 </a>

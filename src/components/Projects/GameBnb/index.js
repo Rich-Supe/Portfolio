@@ -13,8 +13,8 @@ export default function GameBnb() {
     return (
         <div className={styles.gameBnb}>
             <div className={styles.slideHeader}>
-                <a href="https://game-bnb.herokuapp.com/" className={styles.projectLink}>GameBnb</a>
-                <a href="https://github.com/Rich-Supe/GameBnB" className={styles.github}>
+                <a target="_blank" href="https://game-bnb.herokuapp.com/" className={styles.projectLink}>GameBnb</a>
+                <a target="_blank" href="https://github.com/Rich-Supe/GameBnB" className={styles.github}>
                     < GoLogoGithub className={styles.githubTag} />
                     < DiGithubAlt className={styles.githubIcon} />
                 </a>
