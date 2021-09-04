@@ -33,7 +33,7 @@ const imgTex = useLoader(THREE.TextureLoader, circleImg);
         sizes[i] = Math.random() < 0.03 ? 15 : 6;
         }
 ```
-  The planet is it's own geometry object with a custom normalMap texture. Each ring are also their own geometry object. The lights and shadows use a mixture of ThreeJs' pointLight, ambientLight, and spotLight components. These geometries are set to their own rotation to keep is unique from the environment. 
+  The planet is it's own geometry object with a custom normalMap texture. Each ring are also their own geometry object. The lights and shadows use a mixture of ThreeJs' pointLight, ambientLight, and spotLight components. These geometries are set to their own rotation to keep it unique from the environment. 
 
 ```javascript
 const Planet = () => {
