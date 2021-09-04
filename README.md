@@ -79,7 +79,7 @@ return (
 
 ```
 
-  The animations over the scene use Gsap and are not part of the scene component. The have an absolut positioning with a z index, delayed transitions, etc.
+  The animations over the scene use Gsap and are not part of the scene component. The have an absolute positioning with a z index, delayed transitions, etc.
   The rest of the app is pretty simple with easy navigation and user experience in mind. Hope you enjoy!
   
 
