@@ -89,6 +89,7 @@
 /* GameBnb */
 .projectLink {
     margin: 0;
+    color: white;
     font-size: 2em;
     padding:10px;
     text-decoration: none;
@@ -107,6 +108,7 @@
 .github {
     margin: 10px;
     /* padding: 10px; */
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
