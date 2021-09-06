@@ -89,7 +89,7 @@
 /* GameBnb */
 .projectLink {
     margin: 0;
-    color: white;
+    color: white !important;
     font-size: 2em;
     padding:10px;
     text-decoration: none;
@@ -98,7 +98,7 @@
 
 .projectLink:visited, .projectLink:link, .projectLink:active {
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .projectLink:hover {
@@ -108,7 +108,7 @@
 .github {
     margin: 10px;
     /* padding: 10px; */
-    color: white;
+    color: white !important;
     display: flex;
     align-items: center;
     justify-content: center;
