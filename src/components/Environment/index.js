@@ -12,8 +12,8 @@ function Environment() {
     const points = useRef();
 
     useFrame(() => {
-        points.current.rotation.y -= 0.001;
-        points.current.rotation.x -= 0.0005;
+        points.current.rotation.y -= 0.0005;
+        points.current.rotation.x -= 0.00025;
     });
 
     const count = 3000;

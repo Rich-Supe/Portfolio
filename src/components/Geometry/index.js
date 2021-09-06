@@ -13,8 +13,8 @@ function Geometry() {
     const colorMap = useLoader(TextureLoader, texture)
 
     useFrame(() => {
-        group.current.rotation.y += 0.0028;
-        group.current.rotation.x += 0.004;
+        group.current.rotation.y += 0.001;
+        group.current.rotation.x += 0.0017;
     });
 
     const FakeSphere = () => {
