@@ -1,7 +1,7 @@
 
 
 import styles from './AboutMe.module.css'
-import profilePic from '../../assets/profile2.jpg'
+import profilePic from '../../assets/profile3.jpg'
 import SimpleAccordion from '../../assets/Javascript/SimpleAccordion'
 
 
