@@ -4,7 +4,6 @@ import React, { useMemo, useRef } from "react";
 import * as THREE from 'three'
 import { useLoader, useFrame } from 'react-three-fiber'
 import circleImg from '../../assets/circle.png'
-import starImg from '../../assets/stars.png'
 // import { BackSide } from "three";
 
 function Environment() {
