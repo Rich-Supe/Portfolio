@@ -37,6 +37,7 @@ code {
     top: 0;
     left: 25%;
     width: 50%;
+    min-width: 500px;
     border-bottom: 1px dashed rgba(255, 255, 255, 0.342);
     background-color: rgba(0, 0, 0, 0.5);
 }

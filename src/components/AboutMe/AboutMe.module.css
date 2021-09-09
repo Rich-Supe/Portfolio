@@ -63,7 +63,7 @@
 }
 
 .image {
-    height: 65%;
+    height: auto;
     width: 65%;
     border-radius: 50%;
     /* border: 1px solid rgb(0, 0, 0); */

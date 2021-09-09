@@ -14,6 +14,7 @@
 
 .swiper {
     width: 90%;
+    /* padding: 20%; */
     /* border: 10px solid orange; */
     min-height: 600px;
     height: 75%;
@@ -26,10 +27,12 @@
 
 .slide {
     /* border: 3px solid red; */
-    width: 95%;
+    width: 110%;
+    /* padding: 3%; */
     /* border: 1px solid white; */
     /* height: 98% !important; */
-    min-height: 600px;
+    /* min-height: 600px; */
+    height: auto;
 }
 
 .slideContent {
@@ -160,14 +163,14 @@
     height: 80%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     /* border: 1px solid white; */
 }
 
 .descriptionCard {
     width: 80%;
-    height: 65%;
+    height: auto;
     /* padding-top: 5%; */
     /* border: 2px solid white; */
     display: flex;
@@ -190,6 +193,8 @@
 
 .technologiesDiv {
     width: 70%;
+    min-width: 300px;
+    height: auto;
     /* border: 2px solid white; */
     border-left: 4px solid yellow;
     border-right: 4px solid yellow;
@@ -216,6 +221,8 @@
 
 .video {
     margin-bottom: 5%;
+    max-width: 95%;
+    height: auto;
     /* box-shadow: 0px 0px 10px 3px rgb(12, 175, 250); */
 }
 

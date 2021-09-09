@@ -24,8 +24,11 @@
 
 .card {
     height: 50%;
+    /* width: auto; */
     width: 70%;
+    /* min-width: 400px; */
     display: flex;
+    /* justify-content: space-around; */
     justify-content: space-around;
     /* background-color: rgba(248, 217, 217, 0.548);
     color: rgb(255, 255, 255);
@@ -46,14 +49,18 @@
 .card ul {
     height: 100%;
     width: 100%;
+    min-width: 200px;
     margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+    justify-content: center;
+    align-items: flex-start;
     background-color: rgba(255, 255, 255, 0.651);
     color: rgb(255, 255, 255);
     border: 1px solid orange;
     border-radius: 15px;
+    padding-inline-start: none;
 }
 
 .ul1:hover {
