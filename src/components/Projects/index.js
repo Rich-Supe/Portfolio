@@ -3,7 +3,7 @@
 import styles from './Projects.module.css'
 import { FaAngleDoubleDown } from 'react-icons/fa'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Navigation, Pagination } from 'swiper';
+import SwiperCore, { Navigation, Pagination} from 'swiper';
 
 import Cellars from './Cellars'
 import GameBnb from './GameBnb'
@@ -13,8 +13,8 @@ import Portfolio from './Portfolio';
 // Import Swiper styles
 // import 'swiper-bundle.css'
 // import '../../swiper/css';
-import '../../../node_modules/swiper/swiper-bundle.css'
-
+import '../../../node_modules/swiper/swiper-bundle.css';
+// import '../../../node_modules/swiper/components/'
 // module "/home/richsupe/portfolio/portfolio/node_modules/swiper/swiper"
 
 
@@ -37,6 +37,7 @@ function Projects() {
                 spaceBetween={0}
                 slidesPerView={1}
                 navigation
+                effect="fade"
                 // pagination={{ clickable: true }}
                 // onSlideChange={() => console.log('slide change')}
                 // onSwiper={(swiper) => console.log(swiper)}
