@@ -5,7 +5,7 @@ import styles from '../Projects.module.css'
 // GoLogoGithub
 import { GoLogoGithub } from 'react-icons/go'
 import { DiGithubAlt } from 'react-icons/di'
-import food from '../../../assets/Gamebnb.mp4'
+import food from '../../../assets/GameBnb.mp4'
 
 
 export default function GameBnb() {

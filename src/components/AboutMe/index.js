@@ -1,13 +1,30 @@
-
+import {useRef} from 'react'
 
 import styles from './AboutMe.module.css'
-import profilePic from '../../assets/profile3.jpg'
+// import hoverEffect from 'hover-effect'
+import profilePic1 from '../../assets/profile3.jpg'
+// import profilePic2 from '../../assets/profile5.jpg'
+// import profilePic3 from '../../assets/profile6.jpg'
 import SimpleAccordion from '../../assets/Javascript/SimpleAccordion'
 
 
 export default function AboutMe() {
+    const profilePic = useRef(null)
 
-
+    // const m = new hoverEffect({
+    //     // parent: document.querySelector('.image'),
+    //     parent: profilePic.current,
+    //     intensity: 0.3,
+    //     image1: profilePic1,
+    //     image2: profilePic3,
+    //     displacementImage: profilePic2,
+    //     speedIn: 1.5,
+    //     speedOut: 1.5,
+    //     easing: 'ease-in',
+    //     hover: true
+    // });
+    
+    
     return (
         <div className={styles.aboutMe} id='p4'>
             <div className={styles.aboutMe__container}>
@@ -21,7 +38,10 @@ export default function AboutMe() {
                     </div>
                 </div>
                 <div className={styles.pictureDiv}>
-                    <img src={profilePic} alt="profile" className={styles.image}/>
+                    <img src={profilePic1} alt="profile" className={styles.image}/>
+                    {/* <div className={styles.image} ref={profilePic}>
+                    </div>
+                    {console.log(typeof m)} */}
                 </div>
             </div>
             <a href='#p5' className={styles.arrow1}>
