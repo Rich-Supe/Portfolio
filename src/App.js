@@ -28,6 +28,8 @@ function App() {
     const s1Ref = useRef(null);
     const s2Ref = useRef(null);
     const s3Ref = useRef(null);
+    const span1 = useRef(null);
+    const span2 = useRef(null);
     const tl = gsap.timeline();
 
     useEffect(() => {
@@ -37,7 +39,28 @@ function App() {
         tl.to(s1Ref.current, { duration: 1, clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)", y: '10px' }, '-=1.6')
         tl.to(s2Ref.current, { duration: 1, clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)", y: '10px' }, '-=1.4')
         tl.to(s3Ref.current, { duration: 1, clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)", y: '10px' }, '-=1.2')
+        setTimeout(() => {
+            span1.current.classList.add('active')
+            // span2.current.classList.add('active')
+        }, 6000)
+        setTimeout(() => {
+            // span1.current.classList.add('active')
+            span2.current.classList.add('active')
+        }, 6500)
     }, [])
+
+    // const spans = document.querySelectorAll('.word span');
+
+    // spans.forEach((span, idx) => {
+    //     setTimeout(() => {
+    //         span.classList.add('active');
+    //     }, 4050 * (idx + 1));
+    // });
+
+    // function startAnimation() {
+    //     setTimeout(() => {
+    //         sp
+    // }
 
   return (
     <div className="body">
@@ -52,7 +75,18 @@ function App() {
         </div>
         <div id="container">
             <div id="content">
-                <h1 ref={h1Ref} className='name'>Rich Supe</h1>
+                <div ref={h1Ref} className='name'>
+                <div className="word">
+                    <span onClick={e => e.target.classList.add("active")} onAnimationEnd={e => e.target.classList.remove("active")}>R</span>
+                    <span onClick={e => e.target.classList.add("active")} onAnimationEnd={e => e.target.classList.remove("active")}>I</span>
+                    <span ref={span1} onClick={e => e.target.classList.add("active")} onAnimationEnd={e => e.target.classList.remove("active")}>C</span>
+                    <span onClick={e => e.target.classList.add("active")} onAnimationEnd={e => e.target.classList.remove("active")}>H</span>
+                    <span onClick={e => e.target.classList.add("active")} onAnimationEnd={e => e.target.classList.remove("active")}>S</span>
+                    <span onClick={e => e.target.classList.add("active")} onAnimationEnd={e => e.target.classList.remove("active")}>U</span>
+                    <span ref={span2} onClick={e => e.target.classList.add("active")} onAnimationEnd={e => e.target.classList.remove("active")}>P</span>
+                    <span onClick={e => e.target.classList.add("active")} onAnimationEnd={e => e.target.classList.remove("active")}>E</span>
+                </div>
+                </div>
                 {/* <div className='rightSide'> */}
                     <p ref={pRef} className='role'>Full-Stack Software Engineer</p>
                     <div id='socials'>
