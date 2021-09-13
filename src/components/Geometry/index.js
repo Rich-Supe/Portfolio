@@ -57,7 +57,7 @@ function Geometry() {
     const SphereRing3 = () => {
         return (
             <mesh>
-                <ringBufferGeometry args={[1.7, 1.75, 30, 30]} attach="geometry" />
+                <ringBufferGeometry args={[1.8, 1.85, 30, 30]} attach="geometry" />
                 <meshStandardMaterial
                 // <meshPhongMaterial 
                     // size={0.1}
@@ -73,7 +73,7 @@ function Geometry() {
     const SphereRing = () => {
         return (
             <mesh>
-                <ringBufferGeometry args={[1.55, 1.65, 30, 30]} attach="geometry" />
+                <ringBufferGeometry args={[1.65, 1.75, 30, 30]} attach="geometry" />
                 <meshStandardMaterial
                 // <meshPhongMaterial 
                     // size={0.1}
@@ -89,7 +89,7 @@ function Geometry() {
     const SphereRing2 = () => {
         return (
             <mesh>
-                <ringBufferGeometry args={[1.43, 1.5, 30, 30]} attach="geometry" />
+                <ringBufferGeometry args={[1.53, 1.6, 30, 30]} attach="geometry" />
                 <meshStandardMaterial
                 // <meshPhongMaterial 
                     // size={0.1}

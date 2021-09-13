@@ -8,10 +8,15 @@ html {
 body {
  height: 100%;
  width: 100%;
- background-color: rgb(0, 0, 0);
- background-image: url('/src/assets/space4.jpg');
- background-size: contain;
+ /* background-color: rgba(0, 32, 90, 0.288); */
+ background-color: rgba(2, 0, 141, 0.089);
+ background-image: url('/src/assets/space3.jpg');
+ background-size: cover;
  background-repeat: round;
+ /* background-clip: border-box; */
+ background-blend-mode: difference;
+ /* background-origin: border-box; */
+ /* background-position: center; */
  /* overflow-x: hidden; */
  /* overflow-y: scroll; */
 }
@@ -40,7 +45,7 @@ code {
     width: 50%;
     min-width: 500px;
     border-bottom: 1px dashed rgba(255, 255, 255, 0.342);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(21, 35, 61, 0.384);
 }
 
 .navList {
@@ -125,7 +130,7 @@ code {
 
 .anchorT {
     text-decoration: none;
-    font-size: 1.9rem;
+    font-size: 1.8rem;
     color: white;
     position: absolute;
     font-weight: bold;

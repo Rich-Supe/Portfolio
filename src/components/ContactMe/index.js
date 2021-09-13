@@ -25,15 +25,15 @@ export default function ContactMe() {
                     <input type="hidden" name="_subject" value="Rich Supe Contact Form"></input>
                     {/* <input type="hidden" name="_captcha" value="false"></input> */}
                     <input type="hidden" name="_autoresponse" value="Thanks for connecting with me! I'll get back to you at my earliest convenience.      - Rich Supe"></input>
-                    <label>Name</label>
+                    <label>Name:</label>
                     <input type="text" name="name" className={styles.nameInput} onChange={e => setName(e.target.value)}/>
                     </div>
                     <div>
-                    <label>Email</label>
+                    <label>Email:</label>
                     <input type="email" name="email" className={styles.emailInput} onChange={e => setEmail(e.target.value)} required={true}/>
                     </div>
                     <div className={styles.textDiv}>
-                    <label>Message</label>
+                    <label>Message:</label>
                     <textarea name="message" onChange={e => setMessage(e.target.value)} className={styles.textInput} required={true}/>
                     </div>
                     <button type="submit" className={styles.submitBtn}>
