@@ -20,13 +20,21 @@ function Geometry() {
     const FakeSphere = () => {
         return (
             <mesh> 
-                <sphereBufferGeometry args={[1, 30, 30]} attach="geometry" />
+                <sphereBufferGeometry args={[1.15, 30, 30]} attach="geometry" />
                 {/* <meshPhongMaterial */}
                 <meshStandardMaterial
-                color={0xB93622}
+                // color={0xB93622} Reddish
+                // color={0xF39C12} Yellowish
+                color={0xE67E22}
+                emissive={0xB93622}
+                emissiveIntensity={0.3}
                 attach="material"
                 map={colorMap} 
-                metalness={0.3}
+                metalness={0.4}
+                roughness={0.9}
+                // wireframe={true}
+                // vertexColors={true}
+                // fog={true}
                 />
             </mesh>
         );
@@ -49,7 +57,7 @@ function Geometry() {
     const SphereRing3 = () => {
         return (
             <mesh>
-                <ringBufferGeometry args={[1.55, 1.6, 30, 30]} attach="geometry" />
+                <ringBufferGeometry args={[1.7, 1.75, 30, 30]} attach="geometry" />
                 <meshStandardMaterial
                 // <meshPhongMaterial 
                     // size={0.1}
@@ -65,14 +73,14 @@ function Geometry() {
     const SphereRing = () => {
         return (
             <mesh>
-                <ringBufferGeometry args={[1.4, 1.5, 30, 30]} attach="geometry" />
+                <ringBufferGeometry args={[1.55, 1.65, 30, 30]} attach="geometry" />
                 <meshStandardMaterial
                 // <meshPhongMaterial 
                     // size={0.1}
                     color='orange'
                     attach="material"
                     side={DoubleSide}
-                    metalness={0.4}
+                    metalness={0.5}
                 />
             </mesh>
         );
@@ -81,14 +89,15 @@ function Geometry() {
     const SphereRing2 = () => {
         return (
             <mesh>
-                <ringBufferGeometry args={[1.25, 1.35, 30, 30]} attach="geometry" />
+                <ringBufferGeometry args={[1.43, 1.5, 30, 30]} attach="geometry" />
                 <meshStandardMaterial
                 // <meshPhongMaterial 
                     // size={0.1}
                     color='red'
                     attach="material"
                     side={DoubleSide}
-                    metalness={0.4}
+                    metalness={0.6}
+                    // wireframe={true}
                 />
             </mesh>
         );

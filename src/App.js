@@ -30,6 +30,8 @@ function App() {
     const s3Ref = useRef(null);
     const span1 = useRef(null);
     const span2 = useRef(null);
+    const span3 = useRef(null);
+    const span4 = useRef(null);
     const tl = gsap.timeline();
 
     useEffect(() => {
@@ -40,12 +42,12 @@ function App() {
         tl.to(s2Ref.current, { duration: 1, clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)", y: '10px' }, '-=1.4')
         tl.to(s3Ref.current, { duration: 1, clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)", y: '10px' }, '-=1.2')
         setTimeout(() => {
-            span1.current.classList.add('active')
-            // span2.current.classList.add('active')
+            // span1.current.classList.add('active')
+            span3.current.classList.add('active')
         }, 6000)
         setTimeout(() => {
-            // span1.current.classList.add('active')
-            span2.current.classList.add('active')
+            // span2.current.classList.add('active')
+            span4.current.classList.add('active')
         }, 6500)
     }, [])
 
@@ -77,18 +79,18 @@ function App() {
             <div id="content">
                 <div ref={h1Ref} className='name'>
                 <div className="word">
-                    <span onClick={e => e.target.classList.add("active")} onAnimationEnd={e => e.target.classList.remove("active")}>R</span>
-                    <span onClick={e => e.target.classList.add("active")} onAnimationEnd={e => e.target.classList.remove("active")}>I</span>
-                    <span ref={span1} onClick={e => e.target.classList.add("active")} onAnimationEnd={e => e.target.classList.remove("active")}>C</span>
-                    <span onClick={e => e.target.classList.add("active")} onAnimationEnd={e => e.target.classList.remove("active")}>H</span>
-                    <span onClick={e => e.target.classList.add("active")} onAnimationEnd={e => e.target.classList.remove("active")}>S</span>
-                    <span onClick={e => e.target.classList.add("active")} onAnimationEnd={e => e.target.classList.remove("active")}>U</span>
-                    <span ref={span2} onClick={e => e.target.classList.add("active")} onAnimationEnd={e => e.target.classList.remove("active")}>P</span>
-                    <span onClick={e => e.target.classList.add("active")} onAnimationEnd={e => e.target.classList.remove("active")}>E</span>
+                    <span ref={span1} onClick={e => e.target.classList.add("active")} onAnimationEnd={e => e.target.classList.remove("active")}>R</span>
+                    <span onClick={e => e.target.classList.add("active")} onAnimationEnd={e => e.target.classList.remove("active")}>i</span>
+                    <span ref={span3} onClick={e => e.target.classList.add("active")} onAnimationEnd={e => e.target.classList.remove("active")}>c</span>
+                    <span onClick={e => e.target.classList.add("active")} onAnimationEnd={e => e.target.classList.remove("active")}>h</span>
+                    <span ref={span2} onClick={e => e.target.classList.add("active")} onAnimationEnd={e => e.target.classList.remove("active")} className='s'>S</span>
+                    <span onClick={e => e.target.classList.add("active")} onAnimationEnd={e => e.target.classList.remove("active")}>u</span>
+                    <span ref={span4} onClick={e => e.target.classList.add("active")} onAnimationEnd={e => e.target.classList.remove("active")}>p</span>
+                    <span onClick={e => e.target.classList.add("active")} onAnimationEnd={e => e.target.classList.remove("active")}>e</span>
                 </div>
                 </div>
-                {/* <div className='rightSide'> */}
-                    <p ref={pRef} className='role'>Full-Stack Software Engineer</p>
+                <div className='rightSide'>
+                    <p ref={pRef} className='role'>Software Developer</p>
                     <div id='socials'>
                         <ul id="socialsList">
                             <li>
@@ -111,7 +113,7 @@ function App() {
                             </li>
                         </ul>
                     </div>
-                {/* </div> */}
+                </div>
             </div>
         </div>
         <a href="#p2" className='downpg1'>
