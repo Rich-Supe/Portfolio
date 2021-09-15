@@ -22,7 +22,7 @@ export default function FureverWalks() {
             <div className={styles.slideLeft}>
                         <div className={styles.descriptionCard}>
                             {/* <h1>Description</h1> */}
-                            <p className={styles.description}> Fur-ever Walks is a team effort with 3 other engineers within an agile environment. The app lets users plan, manage, and save both past and future walks with their dogs! Furever Walks leverages Google maps geolocation for routes and ReactGraph to record stats. My responsibilities included managing scrum efforts, implementing carousels, Google Maps API, deployment, and more. </p>
+                            <p className={styles.description}> Furever Walks is a team effort with 3 other engineers within an agile environment. The app lets users plan, manage, and save both past and future walks with their dogs! Furever Walks leverages Google maps geolocation for routes and ReactGraph to record stats. My responsibilities included managing scrum efforts, implementing carousels, Google Maps API, deployment, and more. </p>
                             <div className={styles.technologiesDiv}>
                                 <h2> Technologies used</h2>
                                 <div className={styles.listDiv}>

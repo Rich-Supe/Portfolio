@@ -31,7 +31,7 @@ export default function Portfolio() {
             <div className={styles.slideLeft}>
                         <div className={styles.descriptionCard}>
                             {/* <h1>Description</h1> */}
-                            <p className={styles.description}> My Portfolio website uses Three Js to create the landing page! I start with a scene and place the camera. Then I add lighting using a spotlight, shadows, and hoverLights. I create the environment using a rotating 3000 star geometry. The rings on the planet are separate geometries with the planet having it's own textures and mesh.</p>
+                            <p className={styles.description}> My Portfolio website uses Three Js/Fiber to create the landing page! I start by creating a scene and place the camera. Then I add lighting utilizing three-fibers spotlight, shadows, and hoverLights. I create the environment using a rotating 3000 star geometry. The rings on the planet are separate geometries with the planet having having custom normal mapping and mesh. Animations are powered by GSAP and custom CSS.</p>
                             <div className={styles.technologiesDiv}>
                                 <h2> Technologies used</h2>
                                 <div className={styles.listDiv}>

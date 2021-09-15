@@ -4,7 +4,7 @@
     width: 100vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     position: relative;
     padding-top: 5%;
@@ -13,7 +13,7 @@
 
 .upArrow {
     position: absolute;
-    top: 15%;
+    top: 10%;
     left: 50%;
     transform: translateX(-50%);
     cursor: pointer;
@@ -50,6 +50,9 @@
 .header {
     font-size: 2.5rem;
     margin-bottom: 60px;
+    margin-top: 7%;
+    text-shadow: 1px 2px 2px black;
+    z-index: 3;
 }
 
 .card {
