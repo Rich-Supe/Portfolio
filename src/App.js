@@ -32,37 +32,35 @@ function App() {
     const span2 = useRef(null);
     const span3 = useRef(null);
     const span4 = useRef(null);
+    const span5 = useRef(null);
     const tl = gsap.timeline();
+    const tl2 = gsap.timeline();
 
+    
     useEffect(() => {
         tl.from(content, { delay: .5, duration: 4, cssRule: {scaleX: 0}})
+        tl2.from(content, { delay: .5, duration: 4, cssRule: {scaleX: 0}})
         tl.to(h1Ref.current, { duration: 2, clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)", y: '30px' }, '-=3')
-        tl.to(pRef.current, { duration: 3, clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)", y: '30px' }, '-=2')
-        tl.to(s1Ref.current, { duration: 1, clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)", y: '10px' }, '-=1.6')
-        tl.to(s2Ref.current, { duration: 1, clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)", y: '10px' }, '-=1.4')
-        tl.to(s3Ref.current, { duration: 1, clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)", y: '10px' }, '-=1.2')
+        tl2.to(pRef.current, { duration: 3, clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)", y: '30px' }, '-=2')
+        tl2.to(s1Ref.current, { duration: 1, clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)", y: '10px' }, '-=1.6')
+        tl2.to(s2Ref.current, { duration: 1, clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)", y: '10px' }, '-=1.4')
+        tl2.to(s3Ref.current, { duration: 1, clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)", y: '10px' }, '-=1.2')
+        
         setTimeout(() => {
             // span1.current.classList.add('active')
             span3.current.classList.add('active')
+            // tl.reverse(2)
         }, 6000)
         setTimeout(() => {
             // span2.current.classList.add('active')
             span4.current.classList.add('active')
         }, 6500)
+
+        setTimeout(() => {
+            // span2.current.classList.add('active')
+            span5.current.classList.add('active')
+        }, 10500)
     }, [])
-
-    // const spans = document.querySelectorAll('.word span');
-
-    // spans.forEach((span, idx) => {
-    //     setTimeout(() => {
-    //         span.classList.add('active');
-    //     }, 4050 * (idx + 1));
-    // });
-
-    // function startAnimation() {
-    //     setTimeout(() => {
-    //         sp
-    // }
 
   return (
     <div className="body">
@@ -80,7 +78,7 @@ function App() {
                 <div ref={h1Ref} className='name'>
                 <div className="word">
                     <span ref={span1} onClick={e => e.target.classList.add("active")} onAnimationEnd={e => e.target.classList.remove("active")}>R</span>
-                    <span onClick={e => e.target.classList.add("active")} onAnimationEnd={e => e.target.classList.remove("active")}>i</span>
+                    <span ref={span5} onClick={e => e.target.classList.add("active")} onAnimationEnd={e => e.target.classList.remove("active")}>i</span>
                     <span ref={span3} onClick={e => e.target.classList.add("active")} onAnimationEnd={e => e.target.classList.remove("active")}>c</span>
                     <span onClick={e => e.target.classList.add("active")} onAnimationEnd={e => e.target.classList.remove("active")}>h</span>
                     <span ref={span2} onClick={e => e.target.classList.add("active")} onAnimationEnd={e => e.target.classList.remove("active")} className='s'>S</span>

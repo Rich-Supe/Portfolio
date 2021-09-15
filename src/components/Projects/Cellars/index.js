@@ -1,3 +1,6 @@
+import React, { useRef } from "react";
+import { useIntersection } from "react-use";
+import gsap from "gsap";
 
 import styles from '../Projects.module.css'
 
@@ -6,6 +9,44 @@ import { DiGithubAlt } from 'react-icons/di'
 import wine from '../../../assets/Cellars.mp4'
 
 export default function Cellars() {
+
+    const sectionRef = useRef(null);
+
+    // All the ref to be observed
+   const intersection = useIntersection(sectionRef, {
+   root: null,
+   rootMargin: "0px",
+   threshold: 0.5
+   });
+
+   const tl = gsap.timeline();
+
+   // Animation for fading in
+   const fadeIn = element => {
+   tl.to(element, {
+       opacity: 1,
+       y: -60,
+       ease: "power4.out",
+       duration: 3,
+       stagger: {
+       amount: 0.3
+       }
+   });
+   };
+   // Animation for fading out
+   const fadeOut = element => {
+   tl.to(element, {
+       opacity: 0,
+       y: -20,
+       ease: "power4.out",
+       duration: 1
+   });
+   };
+
+   // checking to see when the vieport is visible to the user
+   intersection && intersection.intersectionRatio < 0.2
+   ? fadeOut("#listDiv4")
+   : fadeIn("#listDiv4");
 
     return (
         <div className={styles.cellars}>
@@ -32,7 +73,7 @@ export default function Cellars() {
                             <p className={styles.description}> Cellars is an app for wine lovers and connoisseurs to find their next bottle. Users Can save wines they like in their cellars, leave reviews, add wines to the database, and even write/edit journal entries on ones they've tasted!</p>
                             <div className={styles.technologiesDiv}>
                                 <h2> Technologies used</h2>
-                                <div className={styles.listDiv}>
+                                <div className={styles.listDiv} id='listDiv4' ref={sectionRef}>
                                     <ul className={styles.backend}>
                                         <li>JavaScript</li>
                                         <li>NodeJs</li>

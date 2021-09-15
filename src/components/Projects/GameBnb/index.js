@@ -1,5 +1,7 @@
 
-
+import React, { useRef } from "react";
+import { useIntersection } from "react-use";
+import gsap from "gsap";
 
 import styles from '../Projects.module.css'
 // GoLogoGithub
@@ -9,6 +11,45 @@ import food from '../../../assets/GameBnb.mp4'
 
 
 export default function GameBnb() {
+
+    const sectionRef = useRef(null);
+
+     // All the ref to be observed
+    const intersection = useIntersection(sectionRef, {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.5
+    });
+
+    const tl = gsap.timeline();
+
+    // Animation for fading in
+    const fadeIn = element => {
+    tl.to(element, {
+        opacity: 1,
+        y: -60,
+        ease: "power4.out",
+        duration: 3,
+        stagger: {
+        amount: 0.3
+        }
+    });
+    };
+    // Animation for fading out
+    const fadeOut = element => {
+    tl.to(element, {
+        opacity: 0,
+        y: -20,
+        ease: "power4.out",
+        duration: 1
+    });
+    };
+
+    // checking to see when the vieport is visible to the user
+    intersection && intersection.intersectionRatio < 0.2
+    ? fadeOut("#listDiv1")
+    : fadeIn("#listDiv1");
+
     
     return (
         <div className={styles.gameBnb}>
@@ -29,7 +70,7 @@ export default function GameBnb() {
                         <p className={styles.description}> GameBnb is a fantasy based Airbnb clone where users can create worlds for others to stay and even make reservations/write reviews at other places! Allows multiple image uploading to AWS, Docker containerization/Heroku for deployment, and Redux/Flux architecture for unidirectional data flow and state management on the front-end.</p>
                         <div className={styles.technologiesDiv}>
                             <h2> Technologies used</h2>
-                            <div className={styles.listDiv}>
+                            <div className={styles.listDiv} id='listDiv1' ref={sectionRef}>
                                 <ul className={styles.backend}>
                                     <li>Python</li>
                                     <li>Flask</li>
