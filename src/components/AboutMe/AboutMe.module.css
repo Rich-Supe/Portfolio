@@ -60,6 +60,7 @@
     align-items: center;
     /* border: 1px solid rgb(255, 255, 255); */
     /* border: none; */
+    transform: translate(0%, 0%);
 }
 
 .image {
@@ -70,6 +71,7 @@
     border-radius: 50%;
     /* border: 1px solid rgb(0, 0, 0); */
     box-shadow: 0px 0px 10px 3px #ffffffad;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .buttonDiv {

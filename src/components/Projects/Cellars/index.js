@@ -9,44 +9,76 @@ import { DiGithubAlt } from 'react-icons/di'
 import wine from '../../../assets/Cellars.mp4'
 
 export default function Cellars() {
-
     const sectionRef = useRef(null);
+    const pRef = useRef(null);
 
-    // All the ref to be observed
-   const intersection = useIntersection(sectionRef, {
-   root: null,
-   rootMargin: "0px",
-   threshold: 0.5
-   });
+     // All the ref to be observed
+    const intersection = useIntersection(sectionRef, {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.5
+    });
 
-   const tl = gsap.timeline();
+    const intersection2 = useIntersection(pRef, {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.5
+    });
 
-   // Animation for fading in
-   const fadeIn = element => {
-   tl.to(element, {
-       opacity: 1,
-       y: -60,
-       ease: "bounce",
-       duration: 1.5,
-       stagger: {
-       amount: 0.3
-       }
-   });
-   };
-   // Animation for fading out
-   const fadeOut = element => {
-   tl.to(element, {
-       opacity: 0,
-       y: -20,
-       ease: "power4.out",
-       duration: 0.5
-   });
-   };
 
-   // checking to see when the vieport is visible to the user
+    const tl = gsap.timeline();
+    const tl2 = gsap.timeline();
+
+    // Animation for fading in
+    const fadeIn = element => {
+    tl.to(element, {
+        opacity: 1,
+        y: -60,
+        ease: "bounce",
+        duration: 1.5,
+        stagger: {
+        amount: 0.3
+        }
+    });
+    };
+    const fadeIn2 = element => {
+    tl2.to(element, {
+        opacity: 1,
+        y: -60,
+        ease: "slow",
+        duration: 0.5,
+        // stagger: {
+        // amount: 0.3
+        // }
+    });
+    };
+    // Animation for fading out
+    const fadeOut = element => {
+    tl.to(element, {
+        opacity: 0,
+        y: -20,
+        ease: "back",
+        duration: 0.5
+    });
+    };
+    const fadeOut2 = element => {
+    tl2.to(element, {
+        opacity: 0,
+        y: -20,
+        ease: "back",
+        duration: 0.5
+    });
+    };
+
+    // checking to see when the vieport is visible to the user
+    intersection2 && intersection2.intersectionRatio < 0.5
+    ? fadeOut2("#pDiv4")
+    : fadeIn2("#pDiv4");
+
    intersection && intersection.intersectionRatio < 0.5 ? fadeOut("#listDiv4") : fadeIn("#listDiv4");
 
    useEffect(() => {
+    fadeOut2("#pDiv4")
     fadeOut("#listDiv4")
    }, []);
    
@@ -72,7 +104,9 @@ export default function Cellars() {
                 <div className={styles.slideLeft}>
                         <div className={styles.descriptionCard}>
                             {/* <h1>Description</h1> */}
-                            <p className={styles.description}> Cellars is an app for wine lovers and connoisseurs to find their next bottle. Users Can save wines they like in their cellars, leave reviews, add wines to the database, and even write/edit journal entries on ones they've tasted!</p>
+                            <div className={styles.descriptionDiv}>
+                            <p className={styles.description} id='pDiv4' ref={pRef}> Cellars is an app for wine lovers and connoisseurs to find their next bottle. Users Can save wines they like in their cellars, leave reviews, add wines to the database, and even write/edit journal entries on ones they've tasted!</p>
+                            </div>
                             <div className={styles.technologiesDiv}>
                                 <h2> Technologies used</h2>
                                 <div className={styles.listDiv} id='listDiv4' ref={sectionRef}>

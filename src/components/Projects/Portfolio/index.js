@@ -12,6 +12,7 @@ import port from '../../../assets/Portfolio.mp4'
 export default function Portfolio() {
 
     const sectionRef = useRef(null);
+    const pRef = useRef(null);
 
     // All the ref to be observed
    const intersection = useIntersection(sectionRef, {
@@ -20,7 +21,14 @@ export default function Portfolio() {
    threshold: 0.5
    });
 
+   const intersection2 = useIntersection(pRef, {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.5
+});
+
    const tl = gsap.timeline();
+   const tl2 = gsap.timeline();
 
    // Animation for fading in
    const fadeIn = element => {
@@ -34,6 +42,17 @@ export default function Portfolio() {
        }
    });
    };
+   const fadeIn2 = element => {
+    tl2.to(element, {
+        opacity: 1,
+        y: -60,
+        ease: "slow",
+        duration: 0.5,
+        // stagger: {
+        // amount: 0.3
+        // }
+    });
+    };
    // Animation for fading out
    const fadeOut = element => {
    tl.to(element, {
@@ -43,13 +62,26 @@ export default function Portfolio() {
        duration: 0.5
    });
    };
+   const fadeOut2 = element => {
+    tl2.to(element, {
+        opacity: 0,
+        y: -20,
+        ease: "back",
+        duration: 0.5
+    });
+    };
 
    // checking to see when the vieport is visible to the user
+   intersection2 && intersection2.intersectionRatio < 0.5
+   ? fadeOut2("#pDiv2")
+   : fadeIn2("#pDiv2");
+
    intersection && intersection.intersectionRatio < 0.5
    ? fadeOut("#listDiv2", '#ul21', '#ul22', '#li21', '#li22', '#li23', '#li24', '#li25', '#li26', '#li27', '#li28')
    : fadeIn("#listDiv2", '#ul21', '#ul22', '#li21', '#li22', '#li23', '#li24', '#li25', '#li26', '#li27', '#li28');
 
    useEffect(() => {
+    fadeOut2("#pDiv2", console.log("fadeoutp1"))
     fadeOut("#listDiv2", '#ul21', '#ul22', '#li21', '#li22', '#li23', '#li24', '#li25', '#li26', '#li27', '#li28')
    }, []);
 
@@ -75,7 +107,9 @@ export default function Portfolio() {
             <div className={styles.slideLeft}>
                         <div className={styles.descriptionCard}>
                             {/* <h1>Description</h1> */}
-                            <p className={styles.description}> My Portfolio website uses Three Js/Fiber to create the landing page! I start by creating a scene and place the camera. Then I add lighting utilizing three-fibers spotlight, shadows, and hoverLights. I create the environment using a rotating 3000 star geometry. The rings on the planet are separate geometries with the planet having having custom normal mapping and mesh. Animations are powered by GSAP and custom CSS.</p>
+                            <div className={styles.descriptionDiv}>
+                            <p className={styles.description} id='pDiv2' ref={pRef}> My Portfolio website uses Three Js/Fiber to create the landing page! I start by creating a scene and place the camera. Then I add lighting utilizing three-fibers spotlight, shadows, and hoverLights. I create the environment using a rotating 3000 star geometry. The rings on the planet are separate geometries with the planet having having custom normal mapping and mesh. Animations are powered by GSAP and custom CSS.</p>
+                            </div>
                             <div className={styles.technologiesDiv}>
                                 <h2> Technologies used</h2>
                                 <div className={styles.listDiv} id='listDiv2' ref={sectionRef}>

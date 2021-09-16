@@ -6,7 +6,7 @@ import styles from './AboutMe.module.css'
 // import hoverEffect from 'hover-effect'
 import profilePic1 from '../../assets/profile3.jpg'
 import profilePic2 from '../../assets/profile5.jpg'
-// import profilePic3 from '../../assets/profile6.jpg'
+import profilePic3 from '../../assets/profile6.jpg'
 import SimpleAccordion from '../../assets/Javascript/SimpleAccordion'
 
 
@@ -44,11 +44,13 @@ export default function AboutMe() {
                 </div>
                 <div className={styles.pictureDiv}>
                     <img 
+                        // ref={profilePic}
                         src={profilePic1} 
                         alt="profile" 
                         className={styles.image}
                         onMouseOver={e => (e.currentTarget.src= profilePic2)}
                         onMouseOut={e => (e.currentTarget.src= profilePic1)}
+                        // style={{transform: `${profilePic.hovered ? 'scale(1.2,1.2)' : 'scale(1,1)'}`}}
                         />
                             {/* {m} */}
                     {/* <div className={styles.image} ref={profilePic} id='pic'>

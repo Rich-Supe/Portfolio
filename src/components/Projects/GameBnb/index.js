@@ -30,6 +30,7 @@ export default function GameBnb() {
 
 
     const tl = gsap.timeline();
+    const tl2 = gsap.timeline();
 
     // Animation for fading in
     const fadeIn = element => {
@@ -43,6 +44,17 @@ export default function GameBnb() {
         }
     });
     };
+    const fadeIn2 = element => {
+    tl2.to(element, {
+        opacity: 1,
+        y: -60,
+        ease: "slow",
+        duration: 0.5,
+        // stagger: {
+        // amount: 0.3
+        // }
+    });
+    };
     // Animation for fading out
     const fadeOut = element => {
     tl.to(element, {
@@ -52,19 +64,28 @@ export default function GameBnb() {
         duration: 0.5
     });
     };
+    const fadeOut2 = element => {
+    tl2.to(element, {
+        opacity: 0,
+        y: -20,
+        ease: "back",
+        duration: 0.5
+    });
+    };
 
     // checking to see when the vieport is visible to the user
-    intersection && intersection.intersectionRatio < 0.5
-    ? fadeOut("#listDiv1", console.log("fadeout1"))
-    : fadeIn("#listDiv1", console.log('fadeIn 1'));
+    intersection2 && intersection2.intersectionRatio < 0.5
+    ? fadeOut2("#pDiv1")
+    : fadeIn2("#pDiv1");
 
-    // intersection2 && intersection2.intersectionRatio < 0.5
-    // ? fadeOut("#pDiv1", console.log("fadeoutp1"))
-    // : fadeIn("#pDiv1", console.log('fadeInp 1'));
+    intersection && intersection.intersectionRatio < 0.5
+    ? fadeOut("#listDiv1")
+    : fadeIn("#listDiv1");
+
 
     useEffect(() => {
+        fadeOut2("#pDiv1")
         fadeOut("#listDiv1")
-        // fadeOut("#pDiv1")
        }, []);
     
     return (
@@ -83,7 +104,9 @@ export default function GameBnb() {
                 <div className={styles.slideLeft}>
                     <div className={styles.descriptionCard}>
                         {/* <h1>Description</h1> */}
+                        <div className={styles.descriptionDiv}>
                         <p className={styles.description} id='pDiv1' ref={pRef}> GameBnb is a fantasy based Airbnb clone where users can create worlds for others to stay and even make reservations/write reviews at other places! Allows multiple image uploading to AWS, Docker containerization/Heroku for deployment, and Redux/Flux architecture for unidirectional data flow and state management on the front-end.</p>
+                        </div>
                         <div className={styles.technologiesDiv}>
                             <h2> Technologies used</h2>
                             <div className={styles.listDiv} id='listDiv1' ref={sectionRef}>
