@@ -1,5 +1,5 @@
 
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import { useIntersection } from "react-use";
 import gsap from "gsap";
 
@@ -28,8 +28,8 @@ export default function GameBnb() {
     tl.to(element, {
         opacity: 1,
         y: -60,
-        ease: "power4.out",
-        duration: 3,
+        ease: "bounce",
+        duration: 1.5,
         stagger: {
         amount: 0.3
         }
@@ -40,8 +40,8 @@ export default function GameBnb() {
     tl.to(element, {
         opacity: 0,
         y: -20,
-        ease: "power4.out",
-        duration: 1
+        ease: "back",
+        duration: 0.5
     });
     };
 
@@ -50,6 +50,9 @@ export default function GameBnb() {
     ? fadeOut("#listDiv1", console.log("fadeout1"))
     : fadeIn("#listDiv1", console.log('fadeIn 1'));
 
+    useEffect(() => {
+        fadeOut("#listDiv1")
+       }, []);
     
     return (
         <div className={styles.gameBnb}>

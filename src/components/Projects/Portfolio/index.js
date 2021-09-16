@@ -1,5 +1,5 @@
 
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import { useIntersection } from "react-use";
 import gsap from "gsap";
 
@@ -27,8 +27,8 @@ export default function Portfolio() {
    tl.to(element, {
        opacity: 1,
        y: -60,
-       ease: "power4.out",
-       duration: 3,
+       ease: "elastic",
+       duration: 1.5,
        stagger: {
        amount: 0.3
        }
@@ -40,7 +40,7 @@ export default function Portfolio() {
        opacity: 0,
        y: -20,
        ease: "power4.out",
-       duration: 1
+       duration: 0.5
    });
    };
 
@@ -48,6 +48,10 @@ export default function Portfolio() {
    intersection && intersection.intersectionRatio < 0.5
    ? fadeOut("#listDiv2", '#ul21', '#ul22', '#li21', '#li22', '#li23', '#li24', '#li25', '#li26', '#li27', '#li28')
    : fadeIn("#listDiv2", '#ul21', '#ul22', '#li21', '#li22', '#li23', '#li24', '#li25', '#li26', '#li27', '#li28');
+
+   useEffect(() => {
+    fadeOut("#listDiv2", '#ul21', '#ul22', '#li21', '#li22', '#li23', '#li24', '#li25', '#li26', '#li27', '#li28')
+   }, []);
 
     return (
         <div className={styles.portfolio}>

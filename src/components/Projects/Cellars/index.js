@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import { useIntersection } from "react-use";
 import gsap from "gsap";
 
@@ -26,8 +26,8 @@ export default function Cellars() {
    tl.to(element, {
        opacity: 1,
        y: -60,
-       ease: "power4.out",
-       duration: 3,
+       ease: "bounce",
+       duration: 1.5,
        stagger: {
        amount: 0.3
        }
@@ -39,13 +39,17 @@ export default function Cellars() {
        opacity: 0,
        y: -20,
        ease: "power4.out",
-       duration: 1
+       duration: 0.5
    });
    };
 
    // checking to see when the vieport is visible to the user
    intersection && intersection.intersectionRatio < 0.5 ? fadeOut("#listDiv4") : fadeIn("#listDiv4");
 
+   useEffect(() => {
+    fadeOut("#listDiv4")
+   }, []);
+   
     return (
         <div className={styles.cellars}>
             <div className={styles.slideHeader}>

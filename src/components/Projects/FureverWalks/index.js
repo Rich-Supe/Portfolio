@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import { useIntersection } from "react-use";
 import gsap from "gsap";
 
@@ -27,8 +27,8 @@ export default function FureverWalks() {
    tl.to(element, {
        opacity: 1,
        y: -60,
-       ease: "power4.out",
-       duration: 3,
+       ease: "bounce",
+       duration: 1.5,
        stagger: {
        amount: 0.3
        }
@@ -40,7 +40,7 @@ export default function FureverWalks() {
        opacity: 0,
        y: -20,
        ease: "power4.out",
-       duration: 1
+       duration: 0.5
    });
    };
 
@@ -48,6 +48,10 @@ export default function FureverWalks() {
    intersection && intersection.intersectionRatio < 0.5
    ? fadeOut("#listDiv3", console.log('fadeOut3'))
    : fadeIn("#listDiv3", console.log('fadeIn3'));
+
+   useEffect(() => {
+    fadeOut("#listDiv3")
+   }, []);
 
     return (
         <div className={styles.fureverWalks}>
