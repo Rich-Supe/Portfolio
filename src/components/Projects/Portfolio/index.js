@@ -46,8 +46,8 @@ export default function Portfolio() {
 
    // checking to see when the vieport is visible to the user
    intersection && intersection.intersectionRatio < 0.2
-   ? fadeOut("#listDiv2")
-   : fadeIn("#listDiv2");
+   ? fadeOut("#listDiv2", '#ul21', '#ul22', '#li21', '#li22', '#li23', '#li24', '#li25', '#li26', '#li27', '#li28')
+   : fadeIn("#listDiv2", '#ul21', '#ul22', '#li21', '#li22', '#li23', '#li24', '#li25', '#li26', '#li27', '#li28');
 
     return (
         <div className={styles.portfolio}>
@@ -75,17 +75,17 @@ export default function Portfolio() {
                             <div className={styles.technologiesDiv}>
                                 <h2> Technologies used</h2>
                                 <div className={styles.listDiv} id='listDiv2' ref={sectionRef}>
-                                    <ul className={styles.backend}>
-                                        <li>JavaScript</li>
-                                        <li>HTML5/CSS3</li>
-                                        <li>React</li>
-                                        <li>Gsap</li>
+                                    <ul className={styles.backend} id='ul21'>
+                                        <li id='li21'>JavaScript</li>
+                                        <li id='li22'>HTML5/CSS3</li>
+                                        <li id='li23'>React</li>
+                                        <li id='li24'>Gsap</li>
                                     </ul>
-                                    <ul className={styles.frontend}>
-                                        <li>ThreeJs</li>
-                                        <li>Three-Fiber</li>
-                                        <li>MaterialUi</li>
-                                        <li>SwiperJs</li>
+                                    <ul className={styles.frontend} id='ul22'>
+                                        <li id='li25'>ThreeJs</li>
+                                        <li id='li26'>Three-Fiber</li>
+                                        <li id='li27'>MaterialUi</li>
+                                        <li id='li28'>SwiperJs</li>
                                     </ul>
                                 </div>
                             </div>

@@ -230,11 +230,20 @@
     padding-top: 12%;
 }
 
+/* .listDiv ul {
+    opacity: 0;
+} */
+
+/* .listDiv ul li {
+    opacity: 0;
+} */
+
 .backend, .frontend {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    opacity: 0;
 }
 
 .video {

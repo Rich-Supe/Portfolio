@@ -47,8 +47,8 @@ export default function GameBnb() {
 
     // checking to see when the vieport is visible to the user
     intersection && intersection.intersectionRatio < 0.2
-    ? fadeOut("#listDiv1")
-    : fadeIn("#listDiv1");
+    ? fadeOut("#listDiv1", console.log("fadeout1"))
+    : fadeIn("#listDiv1", console.log('fadeIn 1'));
 
     
     return (
