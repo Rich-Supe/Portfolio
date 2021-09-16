@@ -45,7 +45,7 @@ export default function Portfolio() {
    };
 
    // checking to see when the vieport is visible to the user
-   intersection && intersection.intersectionRatio < 0.2
+   intersection && intersection.intersectionRatio < 0.5
    ? fadeOut("#listDiv2", '#ul21', '#ul22', '#li21', '#li22', '#li23', '#li24', '#li25', '#li26', '#li27', '#li28')
    : fadeIn("#listDiv2", '#ul21', '#ul22', '#li21', '#li22', '#li23', '#li24', '#li25', '#li26', '#li27', '#li28');
 

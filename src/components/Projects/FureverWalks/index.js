@@ -45,9 +45,9 @@ export default function FureverWalks() {
    };
 
    // checking to see when the vieport is visible to the user
-   intersection && intersection.intersectionRatio < 0.2
-   ? fadeOut("#listDiv3")
-   : fadeIn("#listDiv3");
+   intersection && intersection.intersectionRatio < 0.5
+   ? fadeOut("#listDiv3", console.log('fadeOut3'))
+   : fadeIn("#listDiv3", console.log('fadeIn3'));
 
     return (
         <div className={styles.fureverWalks}>

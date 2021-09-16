@@ -44,9 +44,7 @@ export default function Cellars() {
    };
 
    // checking to see when the vieport is visible to the user
-   intersection && intersection.intersectionRatio < 0.2
-   ? fadeOut("#listDiv4")
-   : fadeIn("#listDiv4");
+   intersection && intersection.intersectionRatio < 0.5 ? fadeOut("#listDiv4") : fadeIn("#listDiv4");
 
     return (
         <div className={styles.cellars}>
