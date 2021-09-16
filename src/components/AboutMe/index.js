@@ -1,4 +1,6 @@
 import {useRef} from 'react'
+// import { gsap } from 'gsap'
+// import { three } from 'three'
 
 import styles from './AboutMe.module.css'
 // import hoverEffect from 'hover-effect'
@@ -9,15 +11,16 @@ import SimpleAccordion from '../../assets/Javascript/SimpleAccordion'
 
 
 export default function AboutMe() {
-    const profilePic = useRef(null)
+    // const profilePic = useRef(null)
 
     // const m = new hoverEffect({
     //     // parent: document.querySelector('.image'),
     //     parent: profilePic.current,
+    //     // parent: document.querySelector('#pic'),
     //     intensity: 0.3,
     //     image1: profilePic1,
     //     image2: profilePic3,
-    //     displacementImage: profilePic2,
+    //     // displacementImage: profilePic2,
     //     speedIn: 1.5,
     //     speedOut: 1.5,
     //     easing: 'ease-in',
@@ -27,6 +30,8 @@ export default function AboutMe() {
     
     return (
         <div className={styles.aboutMe} id='p4'>
+            {/* <script src="three.min.js"></script>
+            <script src="TweenMax.min.js"></script> */}
             <div className={styles.aboutMe__container}>
                 <div className={styles.infoDiv}>
                     <div className={styles.card}>
@@ -45,7 +50,8 @@ export default function AboutMe() {
                         onMouseOver={e => (e.currentTarget.src= profilePic2)}
                         onMouseOut={e => (e.currentTarget.src= profilePic1)}
                         />
-                    {/* <div className={styles.image} ref={profilePic}>
+                            {/* {m} */}
+                    {/* <div className={styles.image} ref={profilePic} id='pic'>
                     </div>
                     {console.log(typeof m)} */}
                 </div>

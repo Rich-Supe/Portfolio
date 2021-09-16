@@ -13,6 +13,7 @@ import food from '../../../assets/GameBnb.mp4'
 export default function GameBnb() {
 
     const sectionRef = useRef(null);
+    const pRef = useRef(null);
 
      // All the ref to be observed
     const intersection = useIntersection(sectionRef, {
@@ -20,6 +21,13 @@ export default function GameBnb() {
     rootMargin: "0px",
     threshold: 0.5
     });
+
+    const intersection2 = useIntersection(pRef, {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.5
+    });
+
 
     const tl = gsap.timeline();
 
@@ -50,8 +58,13 @@ export default function GameBnb() {
     ? fadeOut("#listDiv1", console.log("fadeout1"))
     : fadeIn("#listDiv1", console.log('fadeIn 1'));
 
+    // intersection2 && intersection2.intersectionRatio < 0.5
+    // ? fadeOut("#pDiv1", console.log("fadeoutp1"))
+    // : fadeIn("#pDiv1", console.log('fadeInp 1'));
+
     useEffect(() => {
         fadeOut("#listDiv1")
+        // fadeOut("#pDiv1")
        }, []);
     
     return (
@@ -70,7 +83,7 @@ export default function GameBnb() {
                 <div className={styles.slideLeft}>
                     <div className={styles.descriptionCard}>
                         {/* <h1>Description</h1> */}
-                        <p className={styles.description}> GameBnb is a fantasy based Airbnb clone where users can create worlds for others to stay and even make reservations/write reviews at other places! Allows multiple image uploading to AWS, Docker containerization/Heroku for deployment, and Redux/Flux architecture for unidirectional data flow and state management on the front-end.</p>
+                        <p className={styles.description} id='pDiv1' ref={pRef}> GameBnb is a fantasy based Airbnb clone where users can create worlds for others to stay and even make reservations/write reviews at other places! Allows multiple image uploading to AWS, Docker containerization/Heroku for deployment, and Redux/Flux architecture for unidirectional data flow and state management on the front-end.</p>
                         <div className={styles.technologiesDiv}>
                             <h2> Technologies used</h2>
                             <div className={styles.listDiv} id='listDiv1' ref={sectionRef}>
