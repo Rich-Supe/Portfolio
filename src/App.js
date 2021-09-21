@@ -58,7 +58,7 @@ function App() {
 
         setTimeout(() => {
             // span2.current.classList.add('active')
-            span5.current.classList.add('active')
+            span1.current.classList.add('active')
         }, 10500)
     }, [])
 

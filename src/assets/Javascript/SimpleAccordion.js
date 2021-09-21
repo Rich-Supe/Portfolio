@@ -43,7 +43,9 @@ export default function SimpleAccordion() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography className={classes.text}>
-            I graduated from college in Chicago and continued to work in the restaurant industry as an operations manager. While I enjoyed the job, my heart was in tech so I joined App Academy's 1400 hour immersive boot-camp to sharpen my coding skills from front to back with different stacks.
+            I graduated from college in Chicago and continued to work in the restaurant industry as an operations manager. 
+            While I enjoyed the job, my heart was in tech so I joined App Academy's 1400 hour immersive boot-camp to 
+            sharpen my coding skills from front to back with different stacks.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -57,7 +59,9 @@ export default function SimpleAccordion() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography className={classes.text}>
-            I am currently living in Cincinnati looking for new opportunities as a freelance developer or with a team/company that shares my vision for beautiful and functional code. With my free time I enjoy working on my side projects, learning new technologies, and meeting new people!
+            I am currently living in Cincinnati looking for new opportunities with a team/company 
+            that shares my vision for beautiful and functional code. With my free time I enjoy working on my side projects, 
+            learning new technologies, and meeting new people!
           </Typography>
         </AccordionDetails>
       </Accordion>

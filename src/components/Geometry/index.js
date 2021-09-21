@@ -7,6 +7,7 @@ import { TextureLoader } from 'three/src/loaders/TextureLoader'
 
 import './Geometry.css'
 import texture from '../../assets/normalMap.png'
+// import texture from '../../assets/nomalMap4.jpg'
 
 function Geometry() {
     const group = useRef();
@@ -21,8 +22,21 @@ function Geometry() {
         return (
             <mesh> 
                 <sphereBufferGeometry args={[1.15, 30, 30]} attach="geometry" />
-                {/* <meshPhongMaterial */}
-                <meshStandardMaterial
+                {/* <lineBasicMaterial */}
+                {/* <lineDashedMaterial  */}
+                {/* <meshLambertMaterial  */}
+                {/* <meshDepthMaterial  */}
+                {/* <meshNormalMaterial  */}
+                {/* <meshBasicMaterial  */}
+                {/* <meshLambertMaterial  */}
+                {/* <meshPhongMaterial  */}
+                {/* <meshToonMaterial  */}
+                {/* <meshPhysicalMaterial 
+                reflectivity={0.9}
+                clearcoat={0.9}
+                clearcoatRoughness={0.8} */}
+                <meshStandardMaterial 
+
                 // color={0xB93622} Reddish
                 // color={0xF39C12} Yellowish
                 color={0xE67E22}
@@ -30,7 +44,7 @@ function Geometry() {
                 emissiveIntensity={0.3}
                 attach="material"
                 map={colorMap} 
-                metalness={0.4}
+                metalness={0.5}
                 roughness={0.9}
                 // wireframe={true}
                 // vertexColors={true}

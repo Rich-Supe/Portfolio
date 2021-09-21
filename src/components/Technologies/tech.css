@@ -81,17 +81,31 @@
     box-shadow: 0px 0px 5px 2px red;
 }
 
-.card li {
+/* .card li {
     list-style: none;
     display: flex;
     align-items: center;
-    /* height: 20%; */
     height: auto;
-    /* border: 1px solid black; */
     width: 100%;
     padding-left: 40%;
-    /* justify-content: center; */
-    /* align-items: center; */
+} */
+
+.liItem {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    padding-left: 40%;
+    opacity: 0;
+}
+
+.liItem:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
 }
 
 .buttonDiv {
