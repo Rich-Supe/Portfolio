@@ -108,7 +108,10 @@ export default function Portfolio() {
                         <div className={styles.descriptionCard}>
                             {/* <h1>Description</h1> */}
                             <div className={styles.descriptionDiv}>
-                            <p className={styles.description} id='pDiv2' ref={pRef}> My Portfolio website uses Three Js/Fiber to create the landing page! I start by creating a scene and place the camera. Then I add lighting utilizing three-fibers spotlight, shadows, and hoverLights. I create the environment using a rotating 3000 star geometry. The rings on the planet are separate geometries with the planet having having custom normal mapping and mesh. Animations are powered by GSAP and custom CSS.</p>
+                            <p className={styles.description} id='pDiv2' ref={pRef}> My Portfolio website uses Three Js/Fiber to create the 
+                            landing page! I started by creating a scene and place the camera. Then I added lighting 
+                            utilizing three-fiber's spotlight, shadows, and hoverLights. I created the environment using a rotating 3000 star geometry. The rings on the planet are 
+                            separate geometries with the planet having having custom normal mapping and mesh. Animations are powered by GSAP and custom CSS.</p>
                             </div>
                             <div className={styles.technologiesDiv}>
                                 <h2> Technologies used</h2>

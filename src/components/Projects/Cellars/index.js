@@ -105,7 +105,8 @@ export default function Cellars() {
                         <div className={styles.descriptionCard}>
                             {/* <h1>Description</h1> */}
                             <div className={styles.descriptionDiv}>
-                            <p className={styles.description} id='pDiv4' ref={pRef}> Cellars is an app for wine lovers and connoisseurs to find their next bottle. Users Can save wines they like in their cellars, leave reviews, add wines to the database, and even write/edit journal entries on ones they've tasted!</p>
+                            <p className={styles.description} id='pDiv4' ref={pRef}> Cellars is an app for wine lovers and connoisseurs to find their next bottle. 
+                            Users can save wines they like in their cellars, leave reviews, add wines to the database, and even write/edit journal entries on ones they've tasted!</p>
                             </div>
                             <div className={styles.technologiesDiv}>
                                 <h2> Technologies used</h2>

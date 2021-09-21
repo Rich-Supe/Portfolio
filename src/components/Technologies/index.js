@@ -6,12 +6,13 @@ import './tech.css'
 
 export default function Technologies() {
     const liRef = useRef(null);
+    const rootRef = useRef(null);
 
     const tl = gsap.timeline();
 
     const intersection = useIntersection(liRef, {
-        root: null,
-        rootMargin: "20px",
+        // root: rootRef,
+        rootMargin: "0px",
         threshold: 0.5
     });
 
@@ -38,16 +39,19 @@ export default function Technologies() {
     }
 
     // intersection && intersection.intersectionRatio > 0 && staggerIn(liRef.current);
-    intersection && intersection.intersectionRatio < 0.5
+    intersection && 
+    intersection.intersectionRatio < 0.5
     ? staggerOut('.liItem')
     : staggerIn('.liItem');
 
-    // useEffect(() => {
-    //     staggerOut('.liItem');
-    // }, []);
+    useEffect(() => {
+        setTimeout(() => {
+            staggerOut('.liItem');
+        }, 1500)
+    }, []);
 
     return (
-        <div class='technologies' id='p3'>
+        <div className='technologies' id='p3' ref={rootRef}>
             <h1 className='header'>My Current Tech Stack</h1>
             <div className='card' ref={liRef}>
                 <div className='column'>
