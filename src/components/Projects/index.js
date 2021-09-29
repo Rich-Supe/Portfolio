@@ -9,6 +9,7 @@ import Cellars from './Cellars'
 import GameBnb from './GameBnb'
 import FureverWalks from './FureverWalks';
 import Portfolio from './Portfolio';
+import ComicReads from './ComicReads'
 
 // Import Swiper styles
 // import 'swiper-bundle.css'
@@ -53,6 +54,9 @@ function Projects() {
                 </SwiperSlide>
                 <SwiperSlide className= {styles.slide}>
                     <Cellars />
+                </SwiperSlide>
+                <SwiperSlide className= {styles.slide}>
+                    <ComicReads />
                 </SwiperSlide>
                 </Swiper>
                     <a href='#p3' className={styles.downpg1}>

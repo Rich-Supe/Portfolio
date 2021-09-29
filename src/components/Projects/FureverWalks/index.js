@@ -36,7 +36,7 @@ export default function FureverWalks() {
         opacity: 1,
         y: -60,
         ease: "bounce",
-        duration: 1.5,
+        duration: 1,
         stagger: {
         amount: 0.3
         }
@@ -57,7 +57,7 @@ export default function FureverWalks() {
     const fadeOut = element => {
     tl.to(element, {
         opacity: 0,
-        y: -20,
+        y: 0,
         ease: "back",
         duration: 0.5
     });
@@ -65,7 +65,7 @@ export default function FureverWalks() {
     const fadeOut2 = element => {
     tl2.to(element, {
         opacity: 0,
-        y: -20,
+        y: 0,
         ease: "back",
         duration: 0.5
     });
@@ -93,6 +93,9 @@ export default function FureverWalks() {
                     < GoLogoGithub className={styles.githubTag} />
                     < DiGithubAlt className={styles.githubIcon} />
                 </a>
+                <div className={styles.swipetext}>
+                    <p>3/5</p>
+                </div>
             </div>
             <div className={styles.slideContent}>
             <div className={styles.slideLeft}>
