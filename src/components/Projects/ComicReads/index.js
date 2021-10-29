@@ -88,7 +88,7 @@ export default function ComicReads() {
     return (
         <div className={styles.fureverWalks}>
             <div className={styles.slideHeader}>
-                <a target="_blank" href="https://comic-reads.herokuapp.com/" className={styles.projectLink}>Comic Reads</a>
+                <a target="_blank" href="https://comicreads.herokuapp.com/" className={styles.projectLink}>Comic Reads</a>
                 <a target="_blank" href="https://github.com/Rich-Supe/Comic-Reads-App" className={styles.github}>
                     < GoLogoGithub className={styles.githubTag} />
                     < DiGithubAlt className={styles.githubIcon} />
