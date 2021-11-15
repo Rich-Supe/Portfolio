@@ -2,8 +2,6 @@
 
 ## [Live](https://richsupe.com/)
 
-(Currently not responsive to mobile, this is coming soon!)
-
 ### Stack:
   * JavaScript
   * HTML5 / CSS3
